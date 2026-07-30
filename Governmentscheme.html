@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        
+background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPWILy55TgYBlvA2kkkpErrI92lQr17JvFRcC4j9Z9_Q&s=10');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+height: 100vh;
+MARGIN: 0;
+
+        }
+    </style>
+</head>
+<body>
+    <label for="scheme">Select a Scheme:</label>
+
+<select id="scheme" onchange="openScheme()">
+    <option value="">--Government-Scheme--</option>
+
+    <option value="https://www.myscheme.gov.in/schemes/ab-pmjay">
+        PM-JAY
+    </option>
+
+    <option value="https://cghs.mohfw.gov.in/">
+        CGHS
+    </option>
+
+    <option value="https://www.myscheme.gov.in/search">
+        Government Road Accident Scheme
+    </option>
+    <option value="https://www.cmchistn.com/">
+              TamilNadu Hospital scheme
+      </option>
+</select>
+
+<script>
+function openScheme() {
+    const url = document.getElementById("scheme").value;
+
+    if (url !== "") {
+        window.location.href = url;   
+    }
+}
+</script>
+</body>
+</html>

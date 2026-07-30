@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Thyroid Test</title>
+    <link rel="stylesheet" href="Thyroid.css">
+    <style>
+        body{
+        
+background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPWILy55TgYBlvA2kkkpErrI92lQr17JvFRcC4j9Z9_Q&s=10');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+
+        }
+    </style>
+
+</head>
+<body>
+<center>
+<div class="container">
+    <h2>Hospital Thyroid Test Form</h2>
+
+    <form id="thyroidForm">
+        <label>Patient Name:</label>
+        <input type="text" id="name" placeholder="Enter patient name" required><br>
+
+        <label>Age:</label>
+        <input type="number" id="age" placeholder="Enter age" required><br>
+
+        <label>Gender:</label>
+        <select id="gender">
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select><br>
+
+        <label>Select Thyroid Test:</label>
+        <select id="test">
+            <option>TSH</option>
+            <option>T3</option>
+            <option>T4</option>
+            <option>Free T3</option>
+            <option>Free T4</option>
+            <option>Thyroid Profile (T3, T4, TSH)</option>
+        </select><br>
+
+        <button type="submit">Submit</button><br>
+    </form>
+
+    <div id="result"></div>
+</div>
+<script src="script.js"></script>
+</center>
+</body>
+</html>

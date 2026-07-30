@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital Token System</title>
+    <link rel="stylesheet" href="token.css">
+    <style>
+        body{
+        
+background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPWILy55TgYBlvA2kkkpErrI92lQr17JvFRcC4j9Z9_Q&s=10');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Hospital Token System</h1>
+
+    <input type="text" id="patientName" placeholder="Patient Name">
+
+    <select id="department">
+        <option>General Medicine</option>
+        <option>Cardiology</option>
+        <option>Orthopedics</option>
+        <option>Pediatrics</option>
+        <option>Laboratory</option>
+    </select>
+
+    <button onclick="generateToken()">Generate Token</button>
+
+    <h2 id="currentToken"></h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Token</th>
+                <th>Patient</th>
+                <th>Department</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="tokenTable"></tbody>
+    </table>
+</div>
+<script src="token.js"></script>
+</body>
+</html>
